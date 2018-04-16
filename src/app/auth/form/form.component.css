@@ -1,0 +1,13 @@
+.mytable {
+	width: 50%;
+	margin: 15px auto;
+	text-align: center;
+}
+
+.form-group span {
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: red;
+	font-size: 12px;
+}

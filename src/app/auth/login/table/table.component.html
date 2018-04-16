@@ -1,0 +1,28 @@
+<div class="container table-task">
+	<div class="row">
+		<div class="col-12">
+			<table class="table table-bordered text-center">
+				<thead>
+					<tr>
+						<th class="coll-2">UserName</th>
+						<th class="coll-2">Email</th>
+						<th class="coll-3">text</th>
+						<th class="coll-4">Picture</th>
+						<th class="coll-1">Status</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let task of ourTasks">
+						<td class="coll-2">{{task.username}}</td>
+						<td class="coll-2">{{task.email}}</td>
+						<td class="coll-3">{{task.text}}</td>
+						<td class="coll-4">
+							<img src="{{task.image_path}}" alt="alt">
+						</td>
+						<td class="coll-1">{{task.status}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
