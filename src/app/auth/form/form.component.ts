@@ -16,16 +16,16 @@ export class FormComponent implements OnInit {
 	constructor(private user: TaskService) { }
 
 	createTask(formData: NgForm) {
-		// var form = new FormData();
-    // form.append("username", "Example");
-    // form.append("email", "example@example.com");
-		// form.append("text", "Some text");
-		// form.append("image ", this.file);
-		// console.log(this.file)
-		this.formData.value.image = this.file;
+		var form = new FormData();
+    form.append("username", "Example");
+    form.append("email", "example@example.com");
+		form.append("text", "Some text");
+		form.append("image", this.file);
+		console.log(form);
+		// this.formData.value.image = this.file;
 		
-		this.user.createTask(formData.value).subscribe(
-		// this.user.createTask(form).subscribe(
+		// this.user.createTask(formData.value).subscribe(
+		this.user.createTask(form).subscribe(
 			res => {
 				console.log(res);
 				console.log(this.file)

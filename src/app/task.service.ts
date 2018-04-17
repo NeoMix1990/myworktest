@@ -28,7 +28,7 @@ export class TaskService {
 
 	createTask(formData) {
 		console.log(formData);
-		return this.http.post('https://uxcandy.com/~shapoval/test-task-backend/create?developer=myna', formData.value);
+		return this.http.post('https://uxcandy.com/~shapoval/test-task-backend/create?developer=myna', formData, httpOptions);
 	}
 
 }
